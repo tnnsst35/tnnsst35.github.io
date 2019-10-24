@@ -10,6 +10,7 @@
   body {
     width: 800px;
     margin: 0 auto;
+      padding: 0 20px;
   }
   h2:first-letter {
     font-size: 1.5em;
@@ -18,12 +19,54 @@
   div.indent20 {
     margin-left: 20px;
   }
+  nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  nav ul li {
+    float: left;
+  } 
+  nav ul li a {
+    display: block;
+    padding: 0 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    color: #000080;
+  }
+  @media screen and (max-width: 800px) {
+    body {
+      width: auto;
+    }
+  }
+  /*
+  @media screen and (max-width: 480px) {
+    ul.topnav li.right, ul.topnav li {
+      float: none;
+    }
+  }
+  */
   -->
   </style>
 </head>
 <body>
-  <h1></h1>
-  <h2>About Me</h2>
+  <h1>tnnsst35.me</h1>
+  <nav>
+    <ul>
+      <!--
+      <li><a href="#about-me">Abount Me</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#side-job">Side Job</a></li>
+      -->
+      <li><a href="https://twitter.com/tnnsst35" target="_blank">Twitter</a></li>
+      <li><a href="https://blog.tnnsst35.me" target="_blank">Blog</a></li>
+      <!--
+      <li><a href="#contacts">Contacts</a></li>
+      -->
+    </ul>
+  </nav>
+  <h2 id="about-me">About Me</h2>
   <div class="indent20">
     <img src="./images/icon.jpg" width="128"><br>
     tnnsst35<br>
@@ -33,7 +76,7 @@
     <br>
     My favorite game is Dragon Quest, Pokemon, Another Eden, and more.
   </div>
-  <h2>Works</h2>
+  <h2 id="works">Works</h2>
   <div class="indent20">
     <h3>VOYAGE GROUP Inc.</h3>
     <div class="indent20">
@@ -44,7 +87,7 @@
       <p>2012/11 - 2018/08</p>
     </div>
   </div>
-  <h2>Side Job</h2>
+  <h2 id="side-job">Side Job</h2>
   <div class="indent20">
     <h3>wwwaap Inc.</h3>
     <div class="indent20">
@@ -55,11 +98,9 @@
         <p>2019/08 - 2019/09 <a href="https://www.vivi.tv/special/fortune/shingeki/" target="_blank">占いサイト構築</a></p>
     </div>
   </div>
-  <h2>Links</h2>
+  <h2 id="contacts">Contacts</h2>
   <div class="indent20">
-    <a href="https://blog.tnnsst35.me">Blog</a>
-    <a href="https://twitter.com/tnnsst35">Twitter</a>
+    <p>Please contact me via <a href="https://twitter.com/tnnsst35" target="_blank">twitter</a>.</p>
   </div>
 </body>
 </html>
-
